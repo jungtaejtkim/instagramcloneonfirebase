@@ -3,11 +3,11 @@
 //  instaandfire
 //
 //  Created by Jungtae Kim on 2017. 2. 19..
-//  Copyright © 2017년 Jungtae Kim. All rights reserved.
+//  Copyright © 2017년 Jungtae Kim . All rights reserved.
 //
 
 import UIKit
-import Firebase
+import FirebaseCore
 import FirebaseAuth
 import FirebaseStorage
 import FirebaseDatabase

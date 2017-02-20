@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		438907AB1E5AA45B00629161 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438907AA1E5AA45B00629161 /* SignUpViewController.swift */; };
+		438907AD1E5AA46200629161 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438907AC1E5AA46200629161 /* LoginViewController.swift */; };
 		43C56F401E58A9DD003315E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C56F3F1E58A9DD003315E3 /* AppDelegate.swift */; };
-		43C56F421E58A9DD003315E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C56F411E58A9DD003315E3 /* ViewController.swift */; };
 		43C56F451E58A9DD003315E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C56F431E58A9DD003315E3 /* Main.storyboard */; };
 		43C56F471E58A9DD003315E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C56F461E58A9DD003315E3 /* Assets.xcassets */; };
 		43C56F4A1E58A9DD003315E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C56F481E58A9DD003315E3 /* LaunchScreen.storyboard */; };
@@ -18,9 +19,10 @@
 
 /* Begin PBXFileReference section */
 		38B6C6538C6195EB3B97DA68 /* Pods_instaandfire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaandfire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		438907AA1E5AA45B00629161 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		438907AC1E5AA46200629161 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		43C56F3C1E58A9DD003315E3 /* instaandfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaandfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C56F3F1E58A9DD003315E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43C56F411E58A9DD003315E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43C56F441E58A9DD003315E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43C56F461E58A9DD003315E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43C56F491E58A9DD003315E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,9 +75,10 @@
 			isa = PBXGroup;
 			children = (
 				43C56F3F1E58A9DD003315E3 /* AppDelegate.swift */,
-				43C56F411E58A9DD003315E3 /* ViewController.swift */,
 				43C56F511E58AA58003315E3 /* GoogleService-Info.plist */,
 				43C56F431E58A9DD003315E3 /* Main.storyboard */,
+				438907AA1E5AA45B00629161 /* SignUpViewController.swift */,
+				438907AC1E5AA46200629161 /* LoginViewController.swift */,
 				43C56F461E58A9DD003315E3 /* Assets.xcassets */,
 				43C56F481E58A9DD003315E3 /* LaunchScreen.storyboard */,
 				43C56F4B1E58A9DD003315E3 /* Info.plist */,
@@ -215,7 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43C56F421E58A9DD003315E3 /* ViewController.swift in Sources */,
+				438907AD1E5AA46200629161 /* LoginViewController.swift in Sources */,
+				438907AB1E5AA45B00629161 /* SignUpViewController.swift in Sources */,
 				43C56F401E58A9DD003315E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +384,7 @@
 				43C56F501E58A9DD003315E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
