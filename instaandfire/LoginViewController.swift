@@ -14,7 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    var activityIndicator = UIActivityIndicatorView()
+    
     
     func createAlert(title: String, message: String) {
         
@@ -25,12 +25,32 @@ class LoginViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
         
     }
+    
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if let user = FIRAuth.auth()?.currentUser {
+        print(FIRAuth.auth()!.currentUser!.uid)
+        }
     
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        FIRAuth.auth()?.addStateDidChangeListener({ (auth, user) in
+            if user != nil {
+                print(user!)
+                self.shiftVC()
+            } else {
+                
+                print("unauthorized")
+                
+            }
+        })
     }
 
     
@@ -40,15 +60,42 @@ class LoginViewController: UIViewController {
         
         if emailField.text == "" || passwordField.text == "" {
             
-            createAlert(title: "Log-in error", message: "You should input your email and password")
+            self.createAlert(title: "Log-in error", message: "You should input your email and password")
             
             
         } else {
             
-            print("signin button")
+        
+            
+            FIRAuth.auth()?.signIn(withEmail: self.emailField.text!, password: self.passwordField.text!, completion: { (user, error) in
+                if error != nil {
+                    print(error!.localizedDescription)
+                    self.createAlert(title: "Error", message: "Something wrong with Log-in Try again.")
+                
+                } else {
+                    print("signin success")
+                    
+                    
+                    self.shiftVC()
+    
+                }
+                
+            })
             
         }
         
+        
+    }
+    
+    func shiftVC() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let userVC = storyboard.instantiateViewController(withIdentifier: "userVC") as! UIViewController
+        
+        let appdelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        appdelegate.window?.rootViewController = userVC
         
     }
     

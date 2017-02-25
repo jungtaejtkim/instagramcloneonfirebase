@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432273D01E601AA900573A63 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432273CF1E601AA900573A63 /* PostViewController.swift */; };
+		4333B9C61E5ADB19006F0031 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333B9C51E5ADB19006F0031 /* UserViewController.swift */; };
+		4333B9CA1E5C3A87006F0031 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333B9C91E5C3A87006F0031 /* UserTableViewCell.swift */; };
+		4333B9CF1E5D8935006F0031 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333B9CE1E5D8935006F0031 /* User.swift */; };
+		4340F7A01E6032F6004143B8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4340F79F1E6032F6004143B8 /* Post.swift */; };
+		4340F7A21E6033AE004143B8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4340F7A11E6033AE004143B8 /* FeedViewController.swift */; };
 		438907AB1E5AA45B00629161 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438907AA1E5AA45B00629161 /* SignUpViewController.swift */; };
 		438907AD1E5AA46200629161 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438907AC1E5AA46200629161 /* LoginViewController.swift */; };
+		4397A8651E60314100B5E182 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397A8641E60314100B5E182 /* PostCollectionViewCell.swift */; };
 		43C56F401E58A9DD003315E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C56F3F1E58A9DD003315E3 /* AppDelegate.swift */; };
 		43C56F451E58A9DD003315E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C56F431E58A9DD003315E3 /* Main.storyboard */; };
 		43C56F471E58A9DD003315E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C56F461E58A9DD003315E3 /* Assets.xcassets */; };
@@ -19,8 +26,15 @@
 
 /* Begin PBXFileReference section */
 		38B6C6538C6195EB3B97DA68 /* Pods_instaandfire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaandfire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		432273CF1E601AA900573A63 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		4333B9C51E5ADB19006F0031 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		4333B9C91E5C3A87006F0031 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		4333B9CE1E5D8935006F0031 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4340F79F1E6032F6004143B8 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4340F7A11E6033AE004143B8 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		438907AA1E5AA45B00629161 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		438907AC1E5AA46200629161 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4397A8641E60314100B5E182 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		43C56F3C1E58A9DD003315E3 /* instaandfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instaandfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C56F3F1E58A9DD003315E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43C56F441E58A9DD003315E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +67,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4333B9CB1E5D88D1006F0031 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4333B9C51E5ADB19006F0031 /* UserViewController.swift */,
+				438907AA1E5AA45B00629161 /* SignUpViewController.swift */,
+				432273CF1E601AA900573A63 /* PostViewController.swift */,
+				438907AC1E5AA46200629161 /* LoginViewController.swift */,
+				4340F7A11E6033AE004143B8 /* FeedViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4333B9CC1E5D88E3006F0031 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4333B9C91E5C3A87006F0031 /* UserTableViewCell.swift */,
+				4397A8641E60314100B5E182 /* PostCollectionViewCell.swift */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		4333B9CD1E5D8904006F0031 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4333B9CE1E5D8935006F0031 /* User.swift */,
+				4340F79F1E6032F6004143B8 /* Post.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		43C56F331E58A9DD003315E3 = {
 			isa = PBXGroup;
 			children = (
@@ -74,11 +118,12 @@
 		43C56F3E1E58A9DD003315E3 /* instaandfire */ = {
 			isa = PBXGroup;
 			children = (
+				4333B9CD1E5D8904006F0031 /* Objects */,
+				4333B9CC1E5D88E3006F0031 /* Custom Cell */,
+				4333B9CB1E5D88D1006F0031 /* ViewController */,
 				43C56F3F1E58A9DD003315E3 /* AppDelegate.swift */,
 				43C56F511E58AA58003315E3 /* GoogleService-Info.plist */,
 				43C56F431E58A9DD003315E3 /* Main.storyboard */,
-				438907AA1E5AA45B00629161 /* SignUpViewController.swift */,
-				438907AC1E5AA46200629161 /* LoginViewController.swift */,
 				43C56F461E58A9DD003315E3 /* Assets.xcassets */,
 				43C56F481E58A9DD003315E3 /* LaunchScreen.storyboard */,
 				43C56F4B1E58A9DD003315E3 /* Info.plist */,
@@ -219,7 +264,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				438907AD1E5AA46200629161 /* LoginViewController.swift in Sources */,
+				4333B9C61E5ADB19006F0031 /* UserViewController.swift in Sources */,
+				4340F7A21E6033AE004143B8 /* FeedViewController.swift in Sources */,
+				432273D01E601AA900573A63 /* PostViewController.swift in Sources */,
+				4333B9CF1E5D8935006F0031 /* User.swift in Sources */,
+				4397A8651E60314100B5E182 /* PostCollectionViewCell.swift in Sources */,
 				438907AB1E5AA45B00629161 /* SignUpViewController.swift in Sources */,
+				4340F7A01E6032F6004143B8 /* Post.swift in Sources */,
+				4333B9CA1E5C3A87006F0031 /* UserTableViewCell.swift in Sources */,
 				43C56F401E58A9DD003315E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
